@@ -3,6 +3,6 @@ function [] = plotfunc(x, y, m, theta, hAxis, cAxis)
     h = hypothesis(x, theta); % get hypothesis points
     plot(hAxis, x, h, 'r--' ,'lineWidth', 2); %plot in the hypothesis axis
     c = cost(m,h,y); % get cost
-    plot(cAxis, theta, c, 'kx', 'lineWidth', 10); %plot
+    plot(cAxis, theta, c, 'kx', 'lineWidth', 10); %
 
 end

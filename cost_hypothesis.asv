@@ -14,7 +14,7 @@ plot(hAxis, x,y, 'bx', 'lineWidth', 10 ,'MarkerEdgeColor', 'Blue', 'MarkerFaceCo
 
 %new figure window to plot cost of function for a particular value of theta
 figure;
-cAxis = gca; % axis handle to plot cost points
+cAxis = gca; % axis handle
 axis([-1 2.5 0 15]);
 
 xlabel(hAxis, 'x');
@@ -27,14 +27,13 @@ ylabel(cAxis, 'j(theta)');
 hold(hAxis);
 hold(cAxis);
 
-%try different values of theta and plot corresponding hypothesis function and cost
-plotfunc(x,y,m,0, hAxis, cAxis); %theta  = 0
-plotfunc(x,y,m,0.5, hAxis, cAxis); %theta = 0.5
-plotfunc(x,y,m,1, hAxis, cAxis); %theta = 1
-plotfunc(x,y,m,1.5, hAxis, cAxis); %theta = 1.5
-plotfunc(x,y,m,2, hAxis, cAxis); %theta = 2
-plotfunc(x,y,m,2.5, hAxis, cAxis); %theta = 2.5
-plotfunc(x,y,m,-0.5, hAxis, cAxis); %theta = -0.5
+plotfunc(x,y,m,0, hAxis, cAxis);
+plotfunc(x,y,m,0.5, hAxis, cAxis);
+plotfunc(x,y,m,1, hAxis, cAxis);
+plotfunc(x,y,m,1.5, hAxis, cAxis);
+plotfunc(x,y,m,2, hAxis, cAxis);
+plotfunc(x,y,m,2.5, hAxis, cAxis);
+plotfunc(x,y,m,-0.5, hAxis, cAxis);
 
 
 end
